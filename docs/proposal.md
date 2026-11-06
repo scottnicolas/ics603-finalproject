@@ -69,7 +69,7 @@ Read the computed metrics and the analyst's note, then draft the brief as a list
 
 **Limits:** the model does no arithmetic; code computes every number. A second code check rejects any claim containing a number that does not appear in the metrics.
 
-**Initial implementation scope:** connect the existing page and `/generate` endpoint to the model using supplied metrics and the analyst note. This slice adds no retrieval (RAG) or database. Its responses remain drafts; it does not invent pitch-row evidence, which depends on the later data and evidence feature.
+**Initial implementation scope:** connect the existing page and `/generate` endpoint to the model using supplied metrics and the analyst note. This slice adds no retrieval (RAG) or database. Code removes any claim containing a number absent from the supplied metric values and clears model-provided evidence rows; the page labels results as unverified drafts. Pitch-row evidence will be added only when a later data and evidence feature supplies real rows.
 
 ## Data use
 
