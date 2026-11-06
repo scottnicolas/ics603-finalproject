@@ -17,3 +17,4 @@ Add exactly one code-grounded Mermaid diagram of the change to the pull request 
 3. Preserve the existing `## Summary`, `## Test plan`, checklist states, and all other prose verbatim. Replace any existing Mermaid diagram block(s) with one diagram, or append a `## Change diagram` section with one fenced `mermaid` block if none exists.
 4. Update the pull request description with `gh pr edit <number> --body-file <path>` using the complete revised body.
 5. Read the body back with `gh pr view <number> --json body` and confirm there is exactly one diagram, the preserved prose is unchanged, and the diagram follows the Diagram contract.
+6. Open the pull request on GitHub and confirm that the diagram renders. If you cannot inspect the rendered page, report that limitation instead of claiming it rendered.
