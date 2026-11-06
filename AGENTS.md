@@ -49,6 +49,8 @@ uv run pytest                    # run the tests
   the result.
 - Never merge a pull request. The person merges
   after reviewing it.
+- Every pull request description includes a
+  Mermaid diagram of the change.
 
 ## Spec
 
