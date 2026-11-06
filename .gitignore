@@ -13,3 +13,4 @@ wheels/
 
 # Superpowers brainstorming artifacts
 .superpowers/
+.worktrees/
